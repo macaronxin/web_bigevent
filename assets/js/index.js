@@ -29,15 +29,15 @@ function getUserInfo() {
         },
         // 不论成功还是失败,最终都会调用complete回调函数
         // complete: function(res) {
-        //     // // console.log('执行了complete回调函数')
-        //     // // console.log(res)
-        //     //     // 在complete回调函数中, 可以使用res.responseJSON服务器响应回来的数据
-        //     // if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
-        //     //     // 1.强制清空本地存储中的token
-        //     //     localStorage.removeItem('token')
-        //     //         // 2.重新跳转到登录页面
-        //     //     location.href = '/login.html'
-        //     // }
+        //     // console.log('执行了complete回调函数')
+        //     // console.log(res)
+        //     // 在complete回调函数中, 可以使用res.responseJSON服务器响应回来的数据
+        //     if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
+        //         // 1.强制清空本地存储中的token
+        //         localStorage.removeItem('token')
+        //             // 2.重新跳转到登录页面
+        //         location.href = '/login.html'
+        //     }
         // }
     })
 }

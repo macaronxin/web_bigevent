@@ -5,12 +5,11 @@ $.ajaxPrefilter(function(options) {
         // 在发起真正的 Ajax 请求之前，统一拼接请求的根路径
         options.url = 'http://api-breakingnews-web.itheima.net' + options.url
             // 统一为有权限的接口,设置headers请求头
-        if (options.url.indexOf('/my') !== -1) { //包含/my
+        if (options.url.indexOf('/my/') !== -1) { //包含/my
             options.headers = {
                 Authorization: localStorage.getItem('token') || ''
             }
         }
-        // 全局统一挂在complete回调函数
         options.complete = function(res) {
             // console.log('执行了complete回调函数')
             // console.log(res)
